@@ -31,7 +31,7 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        pattern: intmath-*
+        pattern: build
         path: dist/
         merge-multiple: true
     - uses: pypa/gh-action-pypi-publish@release/v1
@@ -48,7 +48,7 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        pattern: intmath-*
+        pattern: build
         path: dist/
         merge-multiple: true
     - uses: sigstore/gh-action-sigstore-python@v3.0.1
